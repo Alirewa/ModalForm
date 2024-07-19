@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge #1</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="content">
+      <h1 id="heading-title">چالش اول - بوت کمپ اول</h1>
+      <button class="btn btn__primary" id="open-modal">
+        <i class="bi bi-folder-plus"></i>
+        افزودن اطلاعات
+      </button>
+    </div>
+
+    <div class="backdrop">
+      <div class="modal">
+        <div class="modal__header">
+          <p class="modal__title">تکمیل اطلاعات</p>
+          <button type="button" class="modal__close btn btn__close">❌</button>
+        </div>
+
+        <hr />
+
+        <div class="container">
+          <form action="#">
+            <div class="form-row">
+              <div class="input-data">
+                <label for="name">نام و نام خانوادگی</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div class="input-data">
+                <label for="email">ایمیل</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="input-data">
+                <label for="phone">شماره موبایل</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  autocomplete="tel"
+                />
+              </div>
+              <div class="input-data">
+                <label for="expertise">تخصص</label>
+                <input type="text" id="expertise" name="expertise" required />
+              </div>
+            </div>
+            <div class="btn-flex">
+              <input class="btn btn__primary" type="submit" value="تایید" />
+              <input
+                class="modal__close btn__secendery"
+                type="button"
+                value="انصراف"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
