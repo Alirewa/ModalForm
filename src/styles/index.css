@@ -128,6 +128,7 @@ hr {
   font-weight: bold;
 }
 .btn__secendery {
+  cursor: pointer;
   color: var(--color-primary-900);
   background-color: transparent;
   border: 2px solid var(--color-primary-400);
